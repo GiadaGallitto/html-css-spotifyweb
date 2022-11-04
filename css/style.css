@@ -86,55 +86,64 @@ li{
 
 .row-discs{
     width: 100%;
-    background-color: rgb(247, 207, 134);
+}
+
+.music-cover img{
+    width: 100%;
+}
+
+.disc-box figcaption{
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
 /* Recently */
 .recently-music{
     width: 100%;
-    background-color: rgb(175, 248, 224);
+    color: white;
 }
 
 .recently-music .disc-box{
-    height: 250px;
-    width: 215px;
-    margin: 1.5rem 2rem 3rem 1rem;
-    background-color: rgb(250, 94, 94);
+    width: calc((100% / 6) - 1.5vw);
+    margin: 1.5rem 1.5vw 3rem 0;
 }
 
 /* For you */
 .your-music,
 .popolar-artists{
     width: calc(100% / 3);
-    background-color: rgb(162, 255, 162);
+    color: white;
 }
 
 .your-music .disc-box{
-    height: 250px;
-    width: 215px;
-    margin: 1.5rem 2rem 3rem 1rem;
-    background-color: rgb(250, 94, 94);
+    width: calc((100% / 2) - 1.5vw);
+    margin: 1.5rem 1.5vw 3rem 0;
 }
 
 /* Artists */
 .popolar-artists .disc-box{
-    height: 250px;
-    width: 215px;
-    margin: 1.5rem 2rem 3rem 1rem;
-    background-color: rgb(250, 94, 94);
+    width: calc((100% / 2) - 1.5vw);
+    margin: 1.5rem 1.5vw 3rem 0;
+}
+
+.popolar-artists img{
+    border-radius: 50%;
 }
 
 /* RESPONSIVE */
 
 /* Medium view */
 @media screen and (max-width: 768px) {
-    .recently-music .disc-box,
+    .recently-music .disc-box{
+        width: calc((100% / 4) - 1vw);
+        margin: 1.5rem 0.5vw 3rem;
+    }
+
     .your-music .disc-box,
     .popolar-artists .disc-box{
-        height: 150px;
-        width: 115px;
-        margin: 1.5rem 0.2rem 3rem;
-        background-color: rgb(250, 94, 94);
+        width: calc((100% / 2) - 1vw);
+        margin: 1.5rem 0.5vw 3rem;
     }
 
     .your-music,
@@ -148,10 +157,8 @@ li{
     .recently-music .disc-box,
     .your-music .disc-box,
     .popolar-artists .disc-box{
-        height: 160px;
-        width: 135px;
-        margin: 1.5rem 0.2rem 3rem;
-        background-color: rgb(250, 94, 94);
+        width: calc((100% / 2) - 0.5vw);
+        margin: 1.5rem 0.5vw 3rem 0;
     }
 
     .your-music,
@@ -168,19 +175,5 @@ li{
     
     main{
         width: calc(100% - 50px);
-    }
-
-    .recently-music .disc-box,
-    .your-music .disc-box,
-    .popolar-artists .disc-box{
-        height: 180px;
-        width: 160px;
-        margin: 1.5rem 0.2rem 3rem;
-        background-color: rgb(250, 94, 94);
-    }
-
-    .your-music,
-    .popolar-artists{
-        width: 100%;
     }
 }
