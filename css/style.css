@@ -144,17 +144,43 @@ li{
 }
 
 /* Small view */
-@media screen and (min-width: 768px) {
-    
+@media screen and (max-width: 576px) {
+    .recently-music .disc-box,
+    .your-music .disc-box,
+    .popolar-artists .disc-box{
+        height: 160px;
+        width: 135px;
+        margin: 1.5rem 0.2rem 3rem;
+        background-color: rgb(250, 94, 94);
+    }
+
+    .your-music,
+    .popolar-artists{
+        width: 100%;
+    }
 }
 
 /* Extra-small view */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     header{
         width: 50px;
     }
     
     main{
         width: calc(100% - 50px);
+    }
+
+    .recently-music .disc-box,
+    .your-music .disc-box,
+    .popolar-artists .disc-box{
+        height: 180px;
+        width: 160px;
+        margin: 1.5rem 0.2rem 3rem;
+        background-color: rgb(250, 94, 94);
+    }
+
+    .your-music,
+    .popolar-artists{
+        width: 100%;
     }
 }
