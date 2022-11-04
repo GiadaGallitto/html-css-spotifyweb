@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* UTILITIES */
 
 .flex-container{
@@ -136,14 +140,14 @@ li{
 /* Medium view */
 @media screen and (max-width: 768px) {
     .recently-music .disc-box{
-        width: calc((100% / 4) - 1vw);
-        margin: 1.5rem 0.5vw 3rem;
+        width: calc((100% / 4) - 1.5vw);
+        margin: 1.5rem 1.5vw 3rem 0;
     }
 
     .your-music .disc-box,
     .popolar-artists .disc-box{
-        width: calc((100% / 2) - 1vw);
-        margin: 1.5rem 0.5vw 3rem;
+        width: calc((100% / 2) - 1.5vw);
+        margin: 1.5rem 1.5vw 3rem 0;
     }
 
     .your-music,
@@ -157,8 +161,8 @@ li{
     .recently-music .disc-box,
     .your-music .disc-box,
     .popolar-artists .disc-box{
-        width: calc((100% / 2) - 0.5vw);
-        margin: 1.5rem 0.5vw 3rem 0;
+        width: calc((100% / 2) - 2vw);
+        margin: 1.5rem 2vw 3rem 0;
     }
 
     .your-music,
