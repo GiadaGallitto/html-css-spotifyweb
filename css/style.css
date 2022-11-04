@@ -25,12 +25,12 @@
 
 /* Principal parts */
 header{
-    width: 250px;
+    width: 220px;
     background-color: black;
 }
 
 main{
-    width: calc(100% - 250px);
+    width: calc(100% - 220px);
     background-color: #141922;
     overflow-y: auto;
     padding-bottom: 10rem;
@@ -81,7 +81,7 @@ li{
 
 /* Music discs sections */
 .music-part{
-    padding: 0 1.5rem;
+    padding: 0 1.2rem;
 }
 
 .row-discs{
@@ -96,9 +96,9 @@ li{
 }
 
 .recently-music .disc-box{
-    height: 230px;
-    width: calc((100% / 6) - 4%);
-    margin: 1.5rem 4% 3rem 0;
+    height: 250px;
+    width: 215px;
+    margin: 1.5rem 2rem 3rem 1rem;
     background-color: rgb(250, 94, 94);
 }
 
@@ -110,28 +110,41 @@ li{
 }
 
 .your-music .disc-box{
-    height: 230px;
-    width: calc((100% / 2) - 1rem);
-    margin: 1.5rem 1rem 3rem 0;
+    height: 250px;
+    width: 215px;
+    margin: 1.5rem 2rem 3rem 1rem;
     background-color: rgb(250, 94, 94);
 }
 
 /* Artists */
 .popolar-artists .disc-box{
-    height: 230px;
-    width: calc((100% / 2) - 1rem);
-    margin: 1.5rem 1rem 3rem 0;
+    height: 250px;
+    width: 215px;
+    margin: 1.5rem 2rem 3rem 1rem;
     background-color: rgb(250, 94, 94);
 }
 
 /* RESPONSIVE */
 
 /* Medium view */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .recently-music .disc-box,
+    .your-music .disc-box,
+    .popolar-artists .disc-box{
+        height: 150px;
+        width: 115px;
+        margin: 1.5rem 0.2rem 3rem;
+        background-color: rgb(250, 94, 94);
+    }
+
+    .your-music,
+    .popolar-artists{
+        width: 50%;
+    }
 }
 
 /* Small view */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     
 }
 
