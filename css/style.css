@@ -23,14 +23,33 @@ body{
     justify-content: center;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
 .p-relative{
     position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.margin-bot{
+    margin-bottom: 1.5rem;
 }
 
 /* Principal parts */
 header{
     width: 220px;
+    height: calc(100% - 100px);
     background-color: black;
+    color: white;
+    position: fixed;
 }
 
 main{
@@ -38,6 +57,7 @@ main{
     background-color: #141922;
     overflow-y: auto;
     padding-bottom: 10rem;
+    right: 0;
 }
 
 footer{
@@ -52,11 +72,12 @@ ul{
     list-style-type: none;
 }
 
-li{
+main li{
     display: inline-block;
 }
 
 /* HEADER PART */
+
 
 /* MAIN PART */
 /* Upper main sections */
@@ -64,6 +85,9 @@ li{
     width: 100%;
     height: 100px;
     background-color: #080b12;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .categories{
@@ -79,7 +103,7 @@ li{
 }
 
 .categories li{
-    margin: 0 1.5rem 1.5rem;
+    margin: 0 1rem 1.5rem;
     border: 1px solid magenta;
 }
 
@@ -94,6 +118,7 @@ li{
 
 .music-cover img{
     width: 100%;
+    max-width: 100%;
 }
 
 .disc-box figcaption{
@@ -138,7 +163,7 @@ li{
 /* RESPONSIVE */
 
 /* Medium view */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .recently-music .disc-box{
         width: calc((100% / 4) - 1.5vw);
         margin: 1.5rem 1.5vw 3rem 0;
@@ -157,7 +182,7 @@ li{
 }
 
 /* Small view */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .recently-music .disc-box,
     .your-music .disc-box,
     .popolar-artists .disc-box{
@@ -172,12 +197,16 @@ li{
 }
 
 /* Extra-small view */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     header{
         width: 50px;
     }
     
     main{
         width: calc(100% - 50px);
+    }
+
+    .categories li{
+        margin: 0 0.5rem 1.5rem;
     }
 }

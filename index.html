@@ -15,13 +15,46 @@
 
     <body>
         <div class="wrapped flex-container flex-wrap p-relative">
-            <header>
-
+            <header class="head-container flex-container flex-column flex-between">
+                    <section class="upper-menu">
+                        <div class="logo margin-bot">
+                            <img src="./img/logo.svg" alt="logo image">
+                        </div>
+                        <div class="main-nav margin-bot">
+                            <ul>
+                                <li>Home</li>
+                                <li>Cerca</li>
+                                <li>La tua libreria</li>
+                            </ul>
+                        </div>
+                        <div class="playlists">
+                            <ul>
+                                <li><h3>PLAYLIST</h3></li>
+                                <li>
+                                    Crea Playlist
+                                </li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="down-menu">
+                        <p>Installa app</p>
+                        <hr>
+                        <h4>Jade</h4>
+                    </section>                  
             </header>
     
-            <main>
+            <main class="p-absolute">
                 <section class="upper-part">
-                    <section class="upgrade"></section>
+                    <section class="upgrade flex-container">
+                        <a href="#">Effettua l'upgrade</a>
+                    </section>
 
                     <nav class="categories flex-container flex-center">
                         <ul class="flex-container flex-wrap flex-center">
@@ -148,8 +181,10 @@
                 </section>
             </main>
     
-            <footer>
-    
+            <footer class="flex-container">
+                <section class="song-preview"></section>
+                <section class="player"></section>
+                <section class="volume"></section>
             </footer>
         </div>
     </body>
