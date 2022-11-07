@@ -251,6 +251,19 @@ main li{
     border-radius: 50%;
 }
 
+/* Footer part */
+footer section{
+    border: 1px solid white;
+}
+
+.player-left img{
+    height: 4rem;
+}
+
+.description{
+    display: inline-block;
+}
+
 /* RESPONSIVE */
 
 /* Medium view */
