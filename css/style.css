@@ -83,6 +83,9 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* HEADER PART */
 .logo img{
@@ -156,6 +159,15 @@ main li{
     justify-content: flex-end;
     align-items: center;
     text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.upgrade a{
+    color: var(--main-accent-color);
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
 }
 
 .categories{
@@ -163,16 +175,11 @@ main li{
     padding: 1rem 0;
     color: var(--secondary-accent-color);
     text-transform: uppercase;
-    background-color: rgb(192, 191, 191);
-}
-
-.categories ul{
-    border: 1px solid blue;
+    font-weight: bold;
 }
 
 .categories li{
     margin: 0 1rem 1.5rem;
-    border: 1px solid magenta;
 }
 
 /* Music discs sections */
