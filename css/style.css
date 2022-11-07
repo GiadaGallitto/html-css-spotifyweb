@@ -8,6 +8,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+:root{
+    --main-accent-color: white;
+    --secondary-accent-color: #7a7c82;
+}
+
 /* UTILITIES */
 
 .flex-container{
@@ -43,13 +48,19 @@ body{
     margin-bottom: 1.5rem;
 }
 
+.c-white{
+    color: var(--main-accent-color);
+}
+
 /* Principal parts */
 header{
     width: 220px;
     height: calc(100% - 100px);
     background-color: black;
-    color: white;
+    color: var(--secondary-accent-color);
     position: fixed;
+    padding: 1.5rem 1rem 0.5rem;
+    font-weight: 600;
 }
 
 main{
@@ -72,15 +83,72 @@ ul{
     list-style-type: none;
 }
 
+
+/* HEADER PART */
+.logo img{
+    width: 65%;
+}
+
+header li{
+    line-height: 2.5rem;
+}
+
+.main-nav li img{
+    height: 1.85rem;
+    display: inline;
+    vertical-align:middle;
+}
+
+.playlists h3{
+    margin-bottom: 0.8rem;
+}
+
+.create-tool{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.add-icon{
+    font-size: 2.5rem;
+    color: black;
+    background-color: var(--secondary-accent-color);
+    padding: 0 0.8rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.download{
+    margin-bottom: 0.7rem;
+}
+
+.download img{
+    height: 1.2rem;
+    margin-right: 0.2rem;
+    display: inline;
+    vertical-align: bottom;
+}
+
+.divider{
+    border-top: 1px solid #b8bbc4;
+    margin-bottom: 1.1rem;
+}
+
+.profile img{
+    height: 2rem;
+    margin-right: 0.2rem;
+    display: inline;
+    background-color: #7a7c82;
+    padding: 0.2rem 0.3rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/* MAIN PART */
+/* Upper main sections */
 main li{
     display: inline-block;
 }
 
-/* HEADER PART */
-
-
-/* MAIN PART */
-/* Upper main sections */
 .upgrade{
     width: 100%;
     height: 100px;
@@ -93,7 +161,7 @@ main li{
 .categories{
     width: 100%;
     padding: 1rem 0;
-    color: #7a7c82;
+    color: var(--secondary-accent-color);
     text-transform: uppercase;
     background-color: rgb(192, 191, 191);
 }
@@ -123,14 +191,14 @@ main li{
 
 .disc-box figcaption{
     text-align: center;
-    color: white;
+    color: var(--main-accent-color);
     overflow: hidden;
 }
 
 /* Recently */
 .recently-music{
     width: 100%;
-    color: white;
+    color: var(--main-accent-color);
 }
 
 .recently-music .disc-box{
@@ -142,7 +210,7 @@ main li{
 .your-music,
 .popolar-artists{
     width: calc(100% / 3);
-    color: white;
+    color: var(--main-accent-color);
 }
 
 .your-music .disc-box{
