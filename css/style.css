@@ -87,6 +87,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 /* HEADER PART */
@@ -259,8 +260,13 @@ main li{
 
 /* Footer part */
 footer section{
-    border: 1px solid white;
     width: calc(100% / 3);
+}
+
+footer li{
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
 }
 
 footer section p{
@@ -288,6 +294,79 @@ footer section p{
 .left-tools a{
     color: var(--secondary-accent-color);
     padding-right: 0.8rem;
+}
+
+.play-tools{
+    width: 100%;
+    text-align: center;
+}
+
+.fa-circle-play{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.play-duration{
+    width: 100%;
+    text-align: center;
+}
+
+.play-duration li{
+    width: 10%;
+}
+
+.play-duration .reproduction{
+    width: 80%;
+}
+
+.play-duration span{
+    font-size: 0.7rem;
+    color: var(--main-accent-color);
+}
+
+.play-duration .play-line{
+    margin-top: 0.8rem;
+}
+
+.play-line span:first-child{
+    width: 30%;
+    border-bottom: 3px solid white;
+}
+
+.play-line span:last-child{
+    width: 70%;
+    border-bottom: 3px solid var(--secondary-accent-color);
+}
+
+.volume{
+    justify-content: flex-end;
+}
+
+.right-tools{
+    margin-top: 0.8rem;
+}
+
+.right-tools li{
+    padding: 0 0.5rem;
+}
+
+.right-tools li:last-child{
+    vertical-align: text-top;
+    margin-top: 0.4rem;
+}
+
+.volume-line{
+    width: 5vw;
+}
+
+.volume-line span:first-child{
+    width: 10%;
+    border-top: 3.5px solid white;
+}
+
+.volume-line span:last-child{
+    width: 90%;
+    border-top: 3.5px solid var(--secondary-accent-color);
 }
 
 /* RESPONSIVE */
@@ -340,6 +419,22 @@ footer section p{
     .left-tools{
         flex-direction: column;
         padding-bottom: 1.2rem;
+    }
+
+    footer i{
+        font-size: 0.8rem;
+    }
+
+    footer section h4{
+        font-size: 0.8rem;
+    }
+
+    .left-tools{
+        padding-left: 1rem;
+    }
+
+    .play-duration ul li:first-child{
+        margin-right: 0.5rem;
     }
 }
 
