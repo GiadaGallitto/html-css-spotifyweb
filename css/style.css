@@ -187,6 +187,14 @@ main li{
     padding: 0 1.2rem;
 }
 
+.title h1{
+    font-size: 1.7rem;
+}
+
+.title p{
+    font-size: 0.8rem;
+}
+
 .row-discs{
     width: 100%;
 }
@@ -200,6 +208,14 @@ main li{
     text-align: center;
     color: var(--main-accent-color);
     overflow: hidden;
+    width: 100%;
+}
+
+.disc-box p,
+.title p{
+    color: var(--secondary-accent-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
 }
 
 /* Recently */
@@ -254,6 +270,10 @@ main li{
     .popolar-artists{
         width: 50%;
     }
+
+    .disc-box figcaption{
+        font-size: 0.8rem;
+    }
 }
 
 /* Small view */
@@ -268,6 +288,14 @@ main li{
     .your-music,
     .popolar-artists{
         width: 100%;
+    }
+
+    .title{
+        font-size: 1.3rem;
+    }
+
+    .disc-box figcaption{
+        font-size: 1rem;
     }
 }
 
