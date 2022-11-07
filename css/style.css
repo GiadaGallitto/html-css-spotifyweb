@@ -77,6 +77,8 @@ footer{
     background-color: #282828;
     position: fixed;
     bottom: 0;
+    padding: 1rem 0.5rem;
+    color: var(--secondary-accent-color);
 }
 
 ul{
@@ -88,8 +90,12 @@ a{
 }
 
 /* HEADER PART */
-.logo img{
+.logo-icon{
     width: 65%;
+}
+
+.small-logo{
+    display: none;
 }
 
 header li{
@@ -254,14 +260,34 @@ main li{
 /* Footer part */
 footer section{
     border: 1px solid white;
+    width: calc(100% / 3);
+}
+
+footer section p{
+    font-size: 0.8rem;
+}
+
+.player-left{
+    align-items: center;
 }
 
 .player-left img{
-    height: 4rem;
+    height: 3.5rem;
+    margin-right: 1rem;
 }
 
 .description{
     display: inline-block;
+}
+
+.left-tools{
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.left-tools a{
+    color: var(--secondary-accent-color);
+    padding-right: 0.8rem;
 }
 
 /* RESPONSIVE */
@@ -310,14 +336,37 @@ footer section{
     .disc-box figcaption{
         font-size: 1rem;
     }
+
+    .left-tools{
+        flex-direction: column;
+        padding-bottom: 1.2rem;
+    }
 }
 
 /* Extra-small view */
 @media screen and (max-width: 576px) {
     header{
         width: 50px;
+        padding: 0.5rem 0.5rem;
     }
-    
+
+    .main-nav span,
+    .logo-icon,
+    .playlists,
+    .down-menu span,
+    .down-menu .divider{
+        display: none;
+    }
+
+    .small-logo{
+        display: block;
+        width: 2rem;
+    }
+
+    .download img{
+        padding-left: 0.3rem;
+    }
+
     main{
         width: calc(100% - 50px);
     }
