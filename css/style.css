@@ -106,6 +106,7 @@ a{
 header li a{
     line-height: 2.5rem;
     color: var(--secondary-accent-color);
+    transition: all 0.3s;
 }
 
 header div a{
@@ -114,10 +115,12 @@ header div a{
 
 header li a:hover{
     color: white;
+    transition: all 0.3s;
 }
 
 .create-tool:hover span a{
     color: white;
+    transition: all 0.3s;
 }
 
 .create-tool:hover .add-icon a{
@@ -127,6 +130,7 @@ header li a:hover{
 
 header div a:hover{
     color: white;
+    transition: all 0.3s;
 }
 
 
@@ -152,6 +156,7 @@ header div a:hover{
 
 .main-nav li.w-border:hover{
     border-left: 2px solid white;
+    transition: all 0.3s;
 }
 
 .playlists h3{
@@ -224,6 +229,7 @@ main li{
     border: 2px solid white;
     padding: 1rem 2.5rem;
     border-radius: 30px;
+    transition: all 0.3s;
 }
 
 .upgrade a:hover{
@@ -244,6 +250,7 @@ main li{
 
 .categories li a:hover{
     color: var(--main-accent-color);
+    transition: all 0.6s;
 }
 
 main li div{
@@ -387,6 +394,7 @@ footer section p{
 
 .description p a{
     color: var(--secondary-accent-color);
+    transition: all 0.3s;
 }
 
 .description p a:hover{
@@ -402,6 +410,7 @@ footer section p{
 .left-tools a{
     color: var(--secondary-accent-color);
     padding-right: 0.8rem;
+    transition: all 0.3s;
 }
 
 .left-tools a:hover{
@@ -416,6 +425,7 @@ footer section p{
 footer .fa-circle-play{
     font-size: 2rem;
     vertical-align: middle;
+    transition: all 0.2s;
 }
 
 footer .fa-circle-play:hover{
@@ -552,12 +562,16 @@ footer .fa-circle-play:hover{
 }
 
 @media screen and (max-height: 850px) {
-    header{
+    .upper-menu{
         overflow: auto;
     }
 
     .create-tool span:last-child{
         font-size: 1rem;
+    }
+
+    .down-menu{
+        margin-top: 1rem;
     }
 }
 
@@ -618,6 +632,10 @@ footer .fa-circle-play:hover{
     .down-menu span,
     .down-menu .divider{
         display: none;
+    }
+
+    .main-nav li{
+        margin-bottom: 0.7rem;
     }
 
     .small-logo{
