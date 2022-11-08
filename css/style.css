@@ -52,6 +52,10 @@ body{
     color: var(--main-accent-color);
 }
 
+.c-white a{
+    color: var(--main-accent-color);
+}
+
 /* Principal parts */
 header{
     width: 220px;
@@ -99,9 +103,32 @@ a{
     display: none;
 }
 
-header li{
+header li a{
     line-height: 2.5rem;
+    color: var(--secondary-accent-color);
 }
+
+header div a{
+    color: var(--secondary-accent-color);
+}
+
+header li a:hover{
+    color: white;
+}
+
+.create-tool:hover span a{
+    color: white;
+}
+
+.create-tool:hover .add-icon a{
+    background-color: white;
+    color: black;
+}
+
+header div a:hover{
+    color: white;
+}
+
 
 .main-nav li img{
     height: 1.85rem;
@@ -125,7 +152,7 @@ header li{
     margin-bottom: 1rem;
 }
 
-.add-icon{
+.add-icon a{
     font-size: 2.5rem;
     color: black;
     background-color: var(--secondary-accent-color);
