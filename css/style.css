@@ -259,9 +259,33 @@ li #evidence{
     width: 100%;
 }
 
+.music-cover .layover{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.layover a{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .fa-circle-play{
+    font-size: 3rem;
+}
+
 .music-cover img{
     width: 100%;
     max-width: 100%;
+}
+
+.music-cover:hover .layover{
+    display: block;
 }
 
 .disc-box figcaption{
@@ -311,6 +335,10 @@ li #evidence{
     border-radius: 50%;
 }
 
+.popolar-artists .layover{
+    border-radius: 50%;
+}
+
 /* Footer part */
 footer section{
     width: calc(100% / 3);
@@ -354,7 +382,7 @@ footer section p{
     text-align: center;
 }
 
-.fa-circle-play{
+footer .fa-circle-play{
     font-size: 2rem;
     vertical-align: middle;
 }
