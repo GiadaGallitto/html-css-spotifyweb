@@ -189,6 +189,10 @@ header div a:hover{
 
 /* MAIN PART */
 /* Upper main sections */
+main a{
+    color: var(--secondary-accent-color);
+}
+
 main li{
     display: inline-block;
 }
@@ -200,7 +204,7 @@ main li{
     justify-content: flex-end;
     align-items: center;
     text-transform: uppercase;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 .upgrade a{
@@ -209,6 +213,10 @@ main li{
     border: 2px solid white;
     padding: 1rem 2.5rem;
     border-radius: 30px;
+}
+
+.upgrade a:hover{
+    transform: scale(1.1);
 }
 
 .categories{
@@ -221,6 +229,10 @@ main li{
 
 .categories li{
     margin: 0 1rem 1.5rem;
+}
+
+.categories li a:hover{
+    color: var(--main-accent-color);
 }
 
 li #evidence{
