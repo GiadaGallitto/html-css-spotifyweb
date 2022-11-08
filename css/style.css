@@ -136,11 +136,22 @@ header div a:hover{
     vertical-align:middle;
 }
 
+.main-nav ul li{
+    border-left: 2px solid black;
+    position: relative;
+    right: 1rem;
+    padding-left: 1rem;
+}
+
 .main-nav ul li:first-child{
     border-left: 2px solid #bbff30;
     position: relative;
     right: 1rem;
     padding-left: 1rem;
+}
+
+.main-nav li.w-border:hover{
+    border-left: 2px solid white;
 }
 
 .playlists h3{
@@ -233,6 +244,13 @@ main li{
 
 .categories li a:hover{
     color: var(--main-accent-color);
+}
+
+main li div{
+    width: 45px;
+    border-bottom: 2px solid #141922;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
 }
 
 li #evidence{
@@ -367,6 +385,15 @@ footer section p{
     display: inline-block;
 }
 
+.description p a{
+    color: var(--secondary-accent-color);
+}
+
+.description p a:hover{
+    color: var(--main-accent-color);
+    text-decoration: underline;
+}
+
 .left-tools{
     padding-left: 2rem;
     font-size: 1.2rem;
@@ -377,6 +404,10 @@ footer section p{
     padding-right: 0.8rem;
 }
 
+.left-tools a:hover{
+    color: var(--main-accent-color);
+}
+
 .play-tools{
     width: 100%;
     text-align: center;
@@ -385,6 +416,10 @@ footer section p{
 footer .fa-circle-play{
     font-size: 2rem;
     vertical-align: middle;
+}
+
+footer .fa-circle-play:hover{
+    transform: scale(1.2);
 }
 
 .play-duration{
@@ -414,9 +449,29 @@ footer .fa-circle-play{
     border-bottom: 3px solid white;
 }
 
+.play-line span>.fa-circle{
+    position: absolute;
+    font-size: 0.8rem;
+    right: 0;
+    top: -3px;
+    display: none;
+}
+
+.play-line:hover span>.fa-circle{
+    display: block;
+}
+
+.play-line:hover span:first-child{
+    border-bottom: 5px solid #bbff30;
+}
+
 .play-line span:last-child{
     width: 70%;
     border-bottom: 3px solid var(--secondary-accent-color);
+}
+
+.play-line:hover span:last-child{
+    border-bottom: 5px solid var(--secondary-accent-color);
 }
 
 .volume{
@@ -441,13 +496,34 @@ footer .fa-circle-play{
 }
 
 .volume-line span:first-child{
-    width: 10%;
+    width: 25%;
     border-top: 3.5px solid white;
 }
 
+.volume-line span>.fa-circle{
+    position: absolute;
+    font-size: 0.7rem;
+    right: -4px;
+    bottom: -4px;
+    color: white;
+    display: none;
+}
+
+.volume-line:hover span:first-child{
+    border-top: 4.5px solid #bbff30;
+}
+
+.volume-line:hover span>.fa-circle{
+    display: block;
+}
+
 .volume-line span:last-child{
-    width: 90%;
+    width: 75%;
     border-top: 3.5px solid var(--secondary-accent-color);
+}
+
+.volume-line:hover span:last-child{
+    border-top: 4.5px solid var(--secondary-accent-color);
 }
 
 /* RESPONSIVE */
@@ -472,6 +548,16 @@ footer .fa-circle-play{
 
     .disc-box figcaption{
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    header{
+        overflow: auto;
+    }
+
+    .create-tool span:last-child{
+        font-size: 1rem;
     }
 }
 
