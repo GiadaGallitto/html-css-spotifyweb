@@ -285,19 +285,27 @@ li #evidence{
 }
 
 .music-cover .layover{
-    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.layover .cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: all 0.4s;
 }
 
 .layover a{
     color: white;
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.4s;
 }
 
 main .fa-circle-play{
@@ -309,8 +317,12 @@ main .fa-circle-play{
     max-width: 100%;
 }
 
-.music-cover:hover .layover{
-    display: block;
+.music-cover:hover .layover .cover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.music-cover:hover .layover a{
+    opacity: 1;
 }
 
 .disc-box figcaption{
@@ -360,11 +372,12 @@ main .fa-circle-play{
     border-radius: 50%;
 }
 
-.popolar-artists .layover{
+.popolar-artists .layover,
+.popolar-artists .cover{
     border-radius: 50%;
 }
 
-/* Footer part */
+/* FOOTER PART */
 footer section{
     width: calc(100% / 3);
 }
@@ -379,6 +392,7 @@ footer section p{
     font-size: 0.8rem;
 }
 
+/* Left player */
 .player-left{
     align-items: center;
 }
@@ -417,6 +431,7 @@ footer section p{
     color: var(--main-accent-color);
 }
 
+/* Main player */
 .play-tools{
     width: 100%;
     text-align: center;
@@ -484,6 +499,7 @@ footer .fa-circle-play:hover{
     border-bottom: 5px solid var(--secondary-accent-color);
 }
 
+/* Right part */
 .volume{
     justify-content: flex-end;
 }
@@ -561,6 +577,7 @@ footer .fa-circle-play:hover{
     }
 }
 
+/* Height view */
 @media screen and (max-height: 850px) {
     .upper-menu{
         overflow: auto;
